@@ -7,13 +7,13 @@ import models.Triangulo;
 public class Principal {
     public static void main(String[] args) {
         ManipuladorDeElementos gerenciador = new ManipuladorDeElementos();
-        Triangulo t1 = new Triangulo(12, 12, 12);
-        Circulo c1 = new Circulo(9);
-        Quadrilatero q1 = new Quadrilatero(3, 3);
+        Triangulo triangulo1 = new Triangulo(5, 5, 5);
+        Circulo circulo1 = new Circulo(11);
+        Quadrilatero quadrilatero1 = new Quadrilatero(7, 7);
 
-        gerenciador.obterInformacoes(t1);
-        gerenciador.obterInformacoes(t1, c1);
-        gerenciador.obterInformacoes(t1, c1, q1);
+        gerenciador.obterInformacoes(triangulo1);
+        gerenciador.obterInformacoes(triangulo1, circulo1);
+        gerenciador.obterInformacoes(triangulo1, circulo1, quadrilatero1);
 
     }
 }
